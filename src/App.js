@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from 'axios';
 import DisplayPlatformStats from './components/DisplayPlatformStats/DisplayPlatformStats'
+import SearchGameDetails from "./components/SearchGameDetails/SearchGameDetails";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <div>
       <DisplayPlatformStats videoGames={videoGames}/>
+      <SearchGameDetails placeholder data={videoGames} />
     </div>
   );
 
