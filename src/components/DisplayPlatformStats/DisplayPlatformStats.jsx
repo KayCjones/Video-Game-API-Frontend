@@ -52,13 +52,6 @@ const DisplayPlatformStats = ({videoGames}) => {
             ["Platform", "Sales", { role: "style" }],
             ...platformArrays
         ];
-    
-        //console.log("data", data)
-
-        // ["PS3", 8.94, "silver"],
-        // ["Silver", 10.49, "silver"], 
-        // ["Gold", 19.3, "silver"],
-        // ["Platinum", 21.45, "silver"],
  
         return data;
     }

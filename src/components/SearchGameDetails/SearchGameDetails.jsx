@@ -22,15 +22,16 @@ const SearchGameDetails = (props) => {
 
     return (
         <div className="search">
-    
-            <div className="searchIcon"> </div>
-            
             <input type="text" value ={searchTerm} onChange={(e)=> setSearchData(e)}></input>
             <div className="dataResult">
                 {displayData.map(element => {
                     return <div>
-                        <div>{element.name}</div>
-                        <div>{element.platform}</div>
+                        <div>Game: {element.name}</div>
+                        <div>Platform: {element.platform}</div>
+                        <div>Game Rank: {element.game_rank}</div>
+                        <div>Release Year: {element.year}</div>
+                        <div>Genre: {element.genre}</div>
+                        <div>Publisher: {element.publisher}</div>
                     </div>
             })}
             </div>
