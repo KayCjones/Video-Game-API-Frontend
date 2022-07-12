@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
       <DisplayPlatformStats videoGames={videoGames}/>
-      <SearchGameDetails placeholder data={videoGames} />
+      <SearchGameDetails data={videoGames} />
     </div>
   );
 
