@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
 import axios from 'axios';
-import DisplayPlatformStats from './components/DisplayPlatformStats/DisplayPlatformStats'
-import SearchGameDetails from "./components/SearchGameDetails/SearchGameDetails";
+// import DisplayPlatformStats from './components/DisplayPlatformStats/DisplayPlatformStats'
+// import SearchGameDetails from "./components/SearchGameDetails/SearchGameDetails";
+import PublisherData from "./components/PublisherData/PublisherData";
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
 
   return (
     <div>
-      <DisplayPlatformStats videoGames={videoGames}/>
-      <SearchGameDetails data={videoGames} />
+      {/* <DisplayPlatformStats videoGames={videoGames}/>
+      <SearchGameDetails data={videoGames} /> */}
+      <PublisherData videoGames={videoGames} />
     </div>
   );
 
